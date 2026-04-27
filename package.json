@@ -1,38 +1,40 @@
 {
   "name": "timertasks",
-  "version": "1.0.0",
-  "description": "设置并管理项目中的定时器",
-  "author": "Miss Gwen <1526566980@qq.com>",
-  "main": "dist/index.js",
-  "types": "index.d.ts",
-  "module": "dist/index.js",
-  "type": "module",
-  "homepage": "https://github.com/MissGwen/timertasks",
-  "bugs": "https://github.com/MissGwen/timertasks/issues",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "files": [
-    "dist",
-    "index.d.ts"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MissGwen/timertasks",
-    "directory": "dist"
-  },
+  "version": "1.0.1",
+  "description": "A lightweight utility for centralized management of setInterval tasks",
   "keywords": [
     "timertasks",
     "setInterval"
   ],
+  "homepage": "https://github.com/MissGwen/timertasks",
+  "bugs": {
+    "url": "https://github.com/MissGwen/timertasks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MissGwen/timertasks.git"
+  },
   "license": "MIT",
+  "author": "MissGwen <missgwen0211@gmail.com>",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "index.d.ts",
   "exports": {
     ".": {
       "types": "./index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs"
     }
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^20.16.5",
